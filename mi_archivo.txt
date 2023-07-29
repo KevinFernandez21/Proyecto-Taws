@@ -1,2 +1,8 @@
 ID,USUARIO,PASSWORD,NAME,LASTNAME,MAIL,NUMBERPHONE,BIRTDATE,GENDER
-0494,Hombrenaranja21,Orangeman31,kevin,Fernandez,kdfenan@espol.edu.ec,0980471552,11/02/2004,hombre
+0494,Hombrenaranja21,sicambio1234,kevin,Fernandez,kdfenan@espol.edu.ec,0980471552,11/02/2004
+6655,Orangeman31,Secret123,Sara,Jones,sarajones@email.com,0987654321,03/15/1998
+8688,User123,Pa#4555,John,Smith,john.smith@example.com,0123456789,09/25/1985
+9876,Testing99,My33445,Jane,Doe,jane.doe@testmail.com,9876543210,07/07/1990
+1234,NewUser2023,Password2023,Michael,Brown,michael.brown@example.com,5555555555,12/31/2000
+5678,AdminUser,Admin123,Emily,Johnson,emily.johnson@example.com,1111111111,05/18/1980
+2468,SecureUser,SecurePass123,David,Williams,david.williams@example.com,9999999999,02/10/1975
