@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: #F8F0E5;
+    color: #102C57;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    padding: 25px;
+    background-color: #DAC0A3;
+}
+
+.main ul li {
+    list-style: none;
+}
+
+.main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.main h1 {
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.main .container_clasificator {
+    display: flex;
+    width: 100%;
+}
+
+.main .container_clasificator .clasificator {
+    width: 50%;
+    background-color: #DAC0A3;
+    padding: 10px;
+    margin: 2px;
+    border-radius: 20px;
+}
+
+.clasificator.part1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.clasificator.part1 button {
+    padding: 10px;
+    z-index: 1000;
+    background-color: #102C57;
+    color: aliceblue;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.query.part1 button {
+    padding: 10px;
+    z-index: 1000;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #102C57;
+    color: aliceblue;
+    border-radius: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.selecciones {
+    display: flex;
+    cursor: pointer;
+    background-color: #DAC0A3;
+}
+
+.selecciones p {
+    cursor: pointer;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #EADBC8;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    margin-left: 10px;
+}
+
+.clasificator .seleccion1 {
+    padding: 30px;
+    width: 500px;
+    height: 400px;
+    background-color: #EADBC8;
+    border-radius: 20px;
+}
+
+.seleccion1 form {
+    text-align: center;
+    border-radius: 20px;
+}
+
+#uploaded-image {
+    text-align: center;
+    margin-left: 70px;
+}
+
+.seleccion1 form label {
+    text-align: center;
+    width: 240px;
+    height: 240px;
+}
+
+.seleccion1 form label #texto {
+    border: #00000000 solid 1px;
+    text-align: center;
+    height: 300px;
+}
+
+form label #texto p {
+    margin-top: 120px;
+    font-size: 25px;
+}
+
+.seleccion1 form label img {
+    width: 300px;
+    height: 300px;
+    display: none;
+    margin-left: 20px;
+}
+
+.clasificator .seleccion2 {
+    display: none;
+    text-align: center;
+}
+
+.clasificator .seleccion2 .video-container {
+    display: none;
+    text-align: center;
+}
+
+.seleccion2 .capture_button {
+    display: block;
+    position: absolute;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.clasificator.part2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.clasificator.part2 .resultado-container {
+    width: 100%;
+}
+
+.main .querys {
+    display: flex;
+    width: 100%;
+}
+
+.main .querys .query {
+    width: 50%;
+    background-color: #DAC0A3;
+    padding: 10px;
+    margin: 2px;
+    border-radius: 20px;
+}
+
+.main .querys .query.part1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .querys .query.part2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .grafics {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .grafics .grafic {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    background-color: #DAC0A3;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.barra-horizontal {
+    margin-top: 10px;
+    width: 100%;
+    height: 6px;
+    text-align: center;
+    background: rgb(14, 104, 172);
+    background: linear-gradient(90deg, rgba(14, 104, 172, 1) 20%, rgba(16, 44, 87, 1) 70%);
+    border-radius: 20px;
+    font-family: Arial, sans-serif;
+}
+
+video {
+    z-index: -1000;
+    width: 480px;
+    height: 395px;
+}
+
+.gra {
+    width: 70%;
+}
+
+#resultado-container {
+    width: 59.5%;
+    padding: 10px;
+    font-size: 40px;
+    text-align: center;
+    display: none;
+    text-transform: uppercase;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+#diccionario-container {
+    padding: 40px;
+    display: none;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#btn_container {
+    background-color: #DAC0A3;
+    display: none;
+}
