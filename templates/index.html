@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Clasificación de Imágenes</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='d3.v7.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <h1 class="titulo">Clasificación de Imágenes</h1>
+        <div class="container_clasificator">
+            <div class="clasificator part1">
+                <div class="selecciones">
+                    <p id="btn_img">IMG</p>
+                    <p id="btn_video">VIDEO</p>
+                </div>
+                <div class="seleccion1" id="seleccion1">
+                    <form method="POST" enctype="multipart/form-data">
+                        <label for="file-upload" id="file-upload-label" class="image-upload-area">
+                            <input type="file" name="file" accept=".jpg, .png, .jpeg" id="file-upload" style="display:none;">
+                            <img id="uploaded-image" src="" alt="Imagen cargada">
+                            <div id="texto">
+                                <p>Coloque la imagen aquí <br>o<br>haga clic para cargar</p>
+                            </div>
+                        </label>
+                        <div>
+                            <button type="button" id="clear-button">Limpiar</button>
+                            <button type="button" id="classify-button">Clasificar</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="seleccion2" id="seleccion2">
+                    <form method="POST" enctype="multipart/form-data">
+                        <div class="video-container">
+                            <video id="camera-preview" autoplay playsinline></video>
+                        </div>
+                    </form>
+                    <div class="capture_button">
+                        <button type="button" id="capture_button">Capturar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="clasificator part2">
+                <div id="resultado-container"></div>
+                <div id="diccionario-container"></div>
+            </div>
+        </div>
+        <div class="querys">
+            <div class="query part1 ">
+                <h2>Se ha realizado de manera correcta la prediccion?</h2>
+                <div id="btn_container">
+                    <button id="btn_yes">Si</button>
+                    <button id="btn_no">No</button>
+                </div>
+            </div>
+            <div class="query part2 ">
+                <h2>Grafica de aciertos</h2>
+                <div class="gra"> <canvas id="grafica_aciertos"></canvas></div>
+            </div>
+
+        </div>
+        <div class=" grafics">
+            <div class="grafic">
+                <h2>Grafica de objetos registrados</h2>
+                <div class="gra"><canvas id="grafica_registro"></canvas></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="{{ url_for( 'static', filename='app.js' ) }} "></script>
+
+</html>
