@@ -1,19 +1,16 @@
 import os
 import random as rd
-from ipykernel import connect
-from keras.models import Sequential
-import keras.applications.mobilenet_v2 as mobilenetv2
 import tensorflow as tf
+from keras.models import load_model
 import sys
-import gradio as gr
-from PyQt5.QtWidgets import QApplication, QMainWindow, QVBoxLayout, QPushButton, QWidget
-from gradio.networking import Server
 from flask import Flask, request, render_template,jsonify
-import gradio as gr
 from PIL import Image
 import numpy as np
+import keras.applications.mobilenet_v2 as mobilenetv2
 
-model = tf.keras.models.load_model('modelo.h5')
+mobilenetv2_layer = mobilenetv2.MobileNetV2(include_top = False, input_shape = (224,224,3),weights = 'imagenet')
+
+model = load_model('modelo.h5')
 categories_traduccion = {0: 'Bateria', 1: 'Biologico', 2: 'carton', 3: 'vidrio', 4: 'metal', 5: 'papel', 6: 'plastico',7: 'domestico'}
 
 app = Flask(__name__)
